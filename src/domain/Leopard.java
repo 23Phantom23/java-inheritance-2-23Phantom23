@@ -1,44 +1,109 @@
 package domain;
 
+
+ /**
+ * The class Leopard extends predator
+ */ 
 public class Leopard extends Predator {
     
     private String kind;
     
-    public Leopard(String name, int weight, String kind){
+
+/** 
+ *
+ * Leopard
+ *
+ * @param name  the name
+ * @param weight  the weight
+ * @param kind  the kind
+ */
+    public Leopard(String name, int weight, String kind){ 
+
         this.name=name;
         this.weight=weight;
         this.kind=kind;
     }
     
-    public Leopard(){
+
+/** 
+ *
+ * Leopard
+ *
+ */
+    public Leopard(){ 
+
         this("Fluffy", 7, "just a leopard");
     }
 
-    public Leopard(String name) {
+
+/** 
+ *
+ * Leopard
+ *
+ * @param name  the name
+ */
+    public Leopard(String name) { 
+
         this(name, 7, "just a leopard");
     }
     
-    public void play(){
+
+/** 
+ *
+ * Play
+ *
+ */
+    public void play(){ 
+
         System.out.println("Loepard is playing...");
     }
 
     @Override
-    public void hunt() {
+
+/** 
+ *
+ * Hunt
+ *
+ */
+    public void hunt() { 
+
         System.out.println("Leopard hunting for a cat");
     }
 
     @Override
-    public String toString() {
+
+/** 
+ *
+ * To string
+ *
+ * @return String
+ */
+    public String toString() { 
+
         return super.toString()+"\nKind:\t"+this.kind+"\n\nThis is Leoprad!";
     }
 
     @Override
-    public void speak() {
+
+/** 
+ *
+ * Speak
+ *
+ */
+    public void speak() { 
+
         System.out.println("Meow! Meow!");
     }
 
     @Override
-    public void eat() {
+
+/** 
+ *
+ * Eat
+ *
+ */
+    public void eat() { 
+
         System.out.println("Leopard eats meat...");
     }
     
